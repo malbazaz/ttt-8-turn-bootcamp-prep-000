@@ -38,7 +38,9 @@ def turn(board)
     move(board, index,"X") 
     display_board(board)
   else
-    "Hi"
+    until valid_move?(board,index)==true 
+    turn(board)
+    end
   end  
   
  
